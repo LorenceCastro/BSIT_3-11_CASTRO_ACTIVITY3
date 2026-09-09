@@ -1,0 +1,60 @@
+.movie-detail {
+  width: 100%;
+}
+
+.movie-banner-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   // buong image makikita, walang cropping
+  display: block;
+}
+
+.movie-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-info h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.genre {
+  color: #888;
+  margin-top: 8px;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+.gallery {
+  padding: 0 20px 30px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Featured Movies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="movie-list">
+
+    <div class="movie-card">
+      <a [routerLink]="['/movie-detail', 'demon-slayer']">
+        <div class="thumb">
+          <img src="assets/images/demonslayer.jpg">
+        </div>
+        <h2>Demon Slayer</h2>
+      </a>
+    </div>
+
+    <div class="movie-card">
+      <a [routerLink]="['/movie-detail', 'jujutsu-kaisen']">
+        <div class="thumb">
+          <img src="assets/images/jujutsukaisen.jpg">
+        </div>
+        <h2>Jujutsu Kaisen</h2>
+      </a>
+    </div>
+
+    <div class="movie-card">
+      <a [routerLink]="['/movie-detail', 'chainsaw-man']">
+        <div class="thumb">
+          <img src="assets/images/chainsawman.jpg">
+        </div>
+        <h2>Chainsaw Man</h2>
+      </a>
+    </div>
+
+    <div class="movie-card">
+      <a [routerLink]="['/movie-detail', 'your-name']">
+        <div class="thumb">
+          <img src="assets/images/yourname.jpg">
+        </div>
+        <h2>Your Name</h2>
+      </a>
+    </div>
+
+    <div class="movie-card">
+      <a [routerLink]="['/movie-detail', 'spongebob-squarepants']">
+        <div class="thumb">
+          <img src="assets/images/spongebob.jpg">
+        </div>
+        <h2>SpongeBob SquarePants</h2>
+      </a>
+    </div>
+
+  </div>
+
+</ion-content>

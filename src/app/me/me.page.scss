@@ -1,0 +1,24 @@
+.profile {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.student-details {
+  text-align: center;
+}
+
+.student-details h2 {
+  margin-bottom: 20px;
+}
+
+.student-details p {
+  margin: 12px 0;
+}

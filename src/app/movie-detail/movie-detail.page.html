@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/movies"
+        text="">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Movie-Detail</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">movie-detail</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div *ngIf="movie" class="movie-detail">
+
+    <!-- Movie Banner -->
+    <div class="movie-banner-wrap">
+      <img
+        class="movie-banner"
+        [src]="movie.banner"
+        [alt]="movie.title"
+      >
+    </div>
+
+
+    <!-- Movie Information -->
+    <div class="movie-info">
+
+      <h1>{{ movie.title }}</h1>
+
+      <p class="genre">
+        {{ movie.genre }}
+      </p>
+
+      <p class="description">
+        {{ movie.description }}
+      </p>
+
+    </div>
+
+
+    <!-- Movie Gallery -->
+    <div class="gallery">
+
+      <h2>Movie Gallery</h2>
+
+      <div class="gallery-grid">
+
+        <img
+          *ngFor="let image of movie.gallery"
+          [src]="image"
+          [alt]="movie.title"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>
